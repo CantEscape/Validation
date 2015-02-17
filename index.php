@@ -8,5 +8,5 @@ use CantEscape\Validator;
 $v = new Validator();
 
 var_dump(array(
-    $v->email("someemail@mail.com")->email("one@two@.net", "james@me.com")->debrief()
+    $v->email()->email("one@two@.net", "james@me.com")->debrief()
 ));

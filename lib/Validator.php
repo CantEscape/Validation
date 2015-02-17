@@ -120,6 +120,7 @@ class Validator extends Rules
     private function exceptionHandle($e)
     {
         $this->validationOk = false;
+        $this->recordValidationResult("MethodError", array(), false);
         echo "CantEscape Validation Error: " . $e->getMessage();
     }
 }
