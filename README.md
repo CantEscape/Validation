@@ -6,3 +6,6 @@ This is something I pretty much overnight while my newborn couldn't sleep and fi
 
 ### Installation
 CantEscape Validation will be available shortly via Composer, for the moment though it's all here.
+
+### Getting Started
+See the Wiki
