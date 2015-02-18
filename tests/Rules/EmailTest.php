@@ -1,7 +1,7 @@
 <?php
 use CantEscape\Validator;
 
-class EmailTest extends PHPUnit_Framework_TestCase
+class EmailTest extends \PHPUnit_Framework_TestCase
 {
     public function testEmail()
     {
