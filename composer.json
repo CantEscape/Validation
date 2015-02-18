@@ -1,0 +1,7 @@
+{
+    "name": "CantEscape/Validation",
+    "description": "A community-driven validation API",
+    "require": {
+        "php": ">=5.3.0",
+    }
+}
