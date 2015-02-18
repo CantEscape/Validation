@@ -15,7 +15,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>library/</directory>
+            <directory>lib/</directory>
         </whitelist>
     </filter>
 </phpunit>
