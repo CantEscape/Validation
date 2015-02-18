@@ -1,10 +1,10 @@
 <?php
 use CantEscape\Validator;
 
+include "../../lib/Validator.php";
+
 class EmailTest extends \PHPUnit_Framework_TestCase
 {
-    include "../../lib/Validator.php";
-    
     public function testEmail()
     {
         $v = new Validator();
