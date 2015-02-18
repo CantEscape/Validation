@@ -1,5 +1,5 @@
 {
-    "name": "CantEscape/Validation",
+    "name": "cantescape/validation",
     "description": "A community-driven validation API",
     "require": {
         "php": ">=5.3.0"
