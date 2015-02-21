@@ -1,6 +1,6 @@
 <?php
 
-include "lib/Validator.php";
+include "vendor/autoload.php";
 
 use CantEscape\Validator;
 
@@ -8,5 +8,5 @@ use CantEscape\Validator;
 $v = new Validator();
 
 var_dump(array(
-    $v->email()->email("one@two@.net", "james@me.com")->debrief()
+    $v->email("bla@bla.com")->email("one@two@.net", "james@me.com")->debrief()
 ));

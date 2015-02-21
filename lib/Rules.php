@@ -1,7 +1,7 @@
 <?php
 namespace CantEscape;
 
-use CantEscape\Exception\CantEscapeException as CantEscapeException;
+use CantEscape\CantEscapeException as CantEscapeException;
 
 const RULE_ENTRY_POINT = "check";
 const RULE_LOC = "/Rules/";

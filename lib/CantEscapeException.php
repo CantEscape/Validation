@@ -1,4 +1,4 @@
 <?php
-namespace CantEscape\Exception;
+namespace CantEscape;
 
 class CantEscapeException extends \Exception {}

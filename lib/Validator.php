@@ -1,10 +1,10 @@
 <?php
 namespace CantEscape;
 
-use CantEscape\Exception\CantEscapeException as CantEscapeException;
+use CantEscape\CantEscapeException as CantEscapeException;
 
-include "/Rules.php";
-include "/CantEscapeExceptions.php";
+/*include "/Rules.php";
+include "/CantEscapeExceptions.php";*/
 
 class Validator extends Rules
 {
