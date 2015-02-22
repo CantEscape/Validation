@@ -3,9 +3,6 @@ namespace CantEscape;
 
 use CantEscape\CantEscapeException as CantEscapeException;
 
-/*include "/Rules.php";
-include "/CantEscapeExceptions.php";*/
-
 class Validator extends Rules
 {
     private $validationOk = "";
@@ -24,6 +21,23 @@ class Validator extends Rules
             $this->exceptionHandle($e);
             return $this;
         }
+    }
+    
+    /**
+    * Entry point for static calls
+    * Instance of Validator is created with original validation request reprocessed
+    * and object is returned for future chained requests
+    */
+    public static function __callStatic($rule, $args)
+    {
+        //Create new validation object
+        $validatorReflection = new \ReflectionClass("CantEscape\\Validator");
+        $validatorObject = $validatorReflection->newInstance();
+        
+        //Call validator object with original arguments
+        call_user_func_array(array($validatorObject, $rule), $args);
+        
+        return $validatorObject;
     }
     
     /**
