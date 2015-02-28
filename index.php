@@ -4,7 +4,7 @@ include "vendor/autoload.php";
 
 use CantEscape\Validator;
 
-if (Validator::email("joe@me.com")->ip("127.0.0.1")->is()) {
+if (Validator::visa("4000-0000-0000-0000")->is()) {
     echo "valid";
 } else {
     echo "invalid";
