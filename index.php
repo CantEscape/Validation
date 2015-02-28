@@ -4,7 +4,7 @@ include "vendor/autoload.php";
 
 use CantEscape\Validator;
 
-if (Validator::text("Hello World")->is()) {
+if (Validator::number("-1001.33")->is()) {
     echo "valid";
 } else {
     echo "invalid";
