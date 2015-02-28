@@ -31,7 +31,7 @@ class Validator extends Rules
     public static function __callStatic($rule, $args)
     {
         //Create new validation object
-        $validatorReflection = new \ReflectionClass("CantEscape\\Validator");
+        $validatorReflection = new \ReflectionClass(__CLASS__);
         $validatorObject = $validatorReflection->newInstance();
         
         //Call validator object with original arguments

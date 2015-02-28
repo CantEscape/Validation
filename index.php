@@ -4,9 +4,8 @@ include "vendor/autoload.php";
 
 use CantEscape\Validator;
 
-//Create new Validator
-$v = new Validator();
-
-var_dump(array(
-    Validator::email("bla@bla.com")->email("one@two@.net", "james@me.com")->debrief()
-));
+if (Validator::email("joe@me.com")->ip("127.0.0.1")->is()) {
+    echo "valid";
+} else {
+    echo "invalid";
+}
