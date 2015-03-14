@@ -33,7 +33,7 @@ class Rules
         $argsReturnValues = true;
         $argsLoopRan = false;
         
-        //Loop through args so each arg is fired individually to be validateda
+        //Loop through args so each arg is fired individually to be validated
         foreach ($args as $argValue) {
             $argsLoopRan = true;
             
